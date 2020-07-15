@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title> Fixed Header and Footer</title>
+    </head>
+        <body>
+            <div class="fixed-header">
+                <div class="container">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">detailed version</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+                <div class="container">
+                    <h1>CSS Layout </h1>
+                        <p>
+                            The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).<br>
+
+                            The position property specifies the type of positioning method used for an element.<br>
+
+                            There are five different position values:<br>
+
+                            static<br>
+                            relative<br>
+                            fixed<br>
+                            absolute<br>
+                            sticky<br>
+                            Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.<br>
+
+                            <h3>position: static;</h3>
+                                HTML elements are positioned static by default.<br>
+
+                                Static positioned elements are not affected by the top, bottom, left, and right properties.<br>
+                            <h3>position: relative;</h3>
+                                An element with position: relative; is positioned relative to its normal position.<br>
+
+                                Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.<br>
+                            <h3>position: fixed;</h3>
+                                An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.<br>
+
+                                A fixed element does not leave a gap in the page where it would normally have been located.<br>
+                            <h3>position: sticky;</h3>
+                                An element with position: sticky; is positioned based on the user's scroll position.<br>
+
+                                A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+                            </p>
+                                                                        
+   
+                </div>    
+            <div class="fixed-footer">
+                <div class="container">copyright</div>        
+            </div>
+        </body>
+</html>
+        <style>
+   
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+         background-image: url(https://i2.wp.com/onaircode.com/wp-content/uploads/2017/11/Tesselation-Transition.jpg);
+                    background-size: 100% 1100px;
+                    background-repeat: no-repeat;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; 
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style> 
